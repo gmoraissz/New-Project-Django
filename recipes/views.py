@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Welcome to the Recipe App!")
+    return render(request, 'recipes/home.html')
 
 
 def contato(request):
-    return HttpResponse("Página de contato")
+    return render(request, 'recipes/contato.html')
 
 
 def sobre(request):
